@@ -1,3 +1,4 @@
+
 console.log('***** Function Practice *****');
 
 // Add the required code to complete the functions below
@@ -15,19 +16,24 @@ console.log(hello())
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return; 'Hello, ' + name + '!';
+  return 'Hello, ' + name + '!';
 }
 // Remember to call the function to test
 console.log("Hello, Jo!", helloName('Jo'));
-console.log ("Hello, Stacy!", helloName('Stacy'));
-
+console.log("Hello, Stacy!", helloName('Stacy'));
+console.log("Hello, Bjork!", helloName('Bjork'));
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber; 
 }
+const addExample1 = addNumbers(4, 4);
+const addExample2 = addNumbers(6, 4);
+const addExample3 = addNumbers(1, 99);
 
-
+console.log(' 4 and 4 is:', addExample1); 
+console.log(' -2 and 8 is:', addExample2); 
+console.log(' 0 and 0 is:', addExample3); 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3) {
 return num1 * num2 * num3;
@@ -45,10 +51,19 @@ function isPositive(number) {
 // Call the function to test each outcome (true & false) 
 const resultPositive = isPositive(5);
 const resultNegative = isPositive(-3);
+const resultPositive2 = isPositive(55);
+const resultNegative2 = isPositive(-1655);
+const resultNegative3 = isPositive(-666);
+const resultPositive3 = isPositive(666);
+
 
 // Write a separate console.log statement for each outcome
-console.log("Outcome of 5 is positive,", resultPositive);
-console.log("Outcome of -3 is positive, ", resultNegative);
+console.log("5 is positive: ", resultPositive);
+console.log("-3 is positive: ", resultNegative);
+console.log("-1655 is negative: ", resultNegative2);
+console.log("55 is positive: ", resultPositive2);
+console.log ("-666 is negative: ", resultNegative3);
+console.log ("666 is positive: " , resultPositive3);
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -73,6 +88,8 @@ function find(value, array) {
 return false
 
 }
+//console.log
+
 
 // ----------------------
 // Stretch Goals
